@@ -226,13 +226,14 @@ img.disabled:hover {
         color: #000; }
 
 .btn, .btn-dark, .btn-light {
+  transition: all 0.5s ease-out;
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #007ce2;
-    color: set-text-color(#007ce2); }
+    color: #000; }
 
 .btn-dark {
   background: black;
@@ -242,9 +243,11 @@ img.disabled:hover {
   background: #c4c4c4;
   color: #000; }
 
-.btn-disabled:hover {
-  background: #444;
-  color: #fff; }
+.btn-disabled {
+  transition: all 2s ease-out; }
+  .btn-disabled:hover {
+    background: #444;
+    color: #fff; }
 
 #main-footer {
   text-align: center;
